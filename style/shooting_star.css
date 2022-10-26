@@ -1,0 +1,171 @@
+.night {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* 별 꼬리 방향 */
+  transform: rotate(155deg);
+  z-index: 9;
+}
+
+.shooting_star {
+  position: absolute;
+  height: 3px;
+  /* 머리색-꼬리색 */
+  background: linear-gradient(-45deg, #ffffee, rgba(255, 255, 255, 0));
+}
+
+.shooting_star:first-child {
+  bottom: 13%;
+  left: 85%;
+  /* 이동 속도 */
+  animation: tail1 2600ms ease infinite, shooting1 2600ms ease infinite;
+  /* 초반 딜레이 속도 */
+  animation-delay: 500ms;
+}
+
+.shooting_star:nth-child(2) {
+  bottom: 5%;
+  left: 45%;
+  height: 2px;
+  animation: tail2 2800ms ease infinite, shooting2 2800ms ease infinite;
+  animation-delay: 1000ms;
+}
+
+.shooting_star:nth-child(3) {
+  bottom: 40%;
+  left: -15%;
+  height: 4px;
+  animation: tail3 5000ms ease infinite, shooting3 5000ms ease infinite;
+}
+
+.shooting_star:nth-child(4) {
+  bottom: 65%;
+  left: 15%;
+  height: 2px;
+  animation: tail4 4200ms ease infinite, shooting4 4200ms ease infinite;
+  animation-delay: 500ms;
+}
+
+.shooting_star:last-child {
+  bottom: 85%;
+  left: -15%;
+  animation: tail5 1400ms ease infinite, shooting5 1400ms ease infinite;
+}
+
+/* 꼬리 길이 */
+@keyframes tail1 {
+
+  0% {
+    width: 0;
+  }
+  6% {
+    width: 100px;
+  }
+  31% {
+    width: 0px;
+  }
+}
+
+@keyframes tail2 {
+
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 160px;
+  }
+  32% {
+    width: 0px;
+  }
+}
+
+@keyframes tail3 {
+
+  0% {
+    width: 0px;
+  }
+  5% {
+    width: 500px;
+  }
+  32% {
+    width: 0px;
+  }
+}
+
+@keyframes tail4 {
+
+  0% {
+    width: 0;
+  }
+  3% {
+    width: 160px;
+  }
+  25% {
+    width: 0px;
+  }
+}
+
+@keyframes tail5 {
+
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 160px;
+  }
+  75% {
+    width: 0px;
+  }
+}
+
+/* 이동 길이 */
+@keyframes shooting1 {
+
+  0% {
+    transform: translateX(0);
+  }
+  42% {
+    transform: translateX(300px);
+  }
+}
+
+@keyframes shooting2 {
+
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(500px);
+  }
+}
+
+@keyframes shooting3 {
+
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1500px);
+  }
+
+}
+
+@keyframes shooting4 {
+
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(500px);
+  }
+}
+
+@keyframes shooting5 {
+
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}

@@ -1,0 +1,10 @@
+/* 헬베티카 Now Text */
+
+@font-face {
+  font-family: 'Helvetica Now Text ';
+  src: url('../font/HelveticaNowText-Thin.eot');
+  src: url('../font/HelveticaNowText-Thin.eot?#iefix') format('embedded-opentype'),
+       url('../font/HelveticaNowText-Thin.ttf') format('truetype'),
+       url('../font/HelveticaNowText-Thin.woff') format('woff'),
+       url('../font/HelveticaNowText-Thin.woff2') format('woff2');
+}
